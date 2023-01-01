@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000; 
+}
+
+.netflix{
+    position: relative;
+    width: 360px;
+    height: 520px;
+    overflow: hidden;
+    transform: scale(0.8);
+}
+
+.netflix span{
+   position:absolute;
+   top:0;
+   width:120px;
+   height: 100%;
+   background: white;
+}
+
+.netflix span:nth-child(1){
+    background: #b00e12;
+    left: 0;
+}
+
+.netflix span:nth-child(2){
+    background: #e50815;
+    left: 121px;
+    z-index: 1;
+    transform-origin: top-left; 
+    transform:skewX(24deg) ;
+    box-shadow: 0 0 40px rgba(0,0,0,1); 
+}
+
+.netflix span:nth-child(3){
+
+}
