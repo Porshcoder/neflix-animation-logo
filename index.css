@@ -21,7 +21,7 @@ body{
    top:0;
    width:120px;
    height: 100%;
-   background: white;
+   background: #b00e12;
 }
 
 .netflix span:nth-child(1){
@@ -68,4 +68,26 @@ h3{
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
     transform: scalex(1.5);
+}
+
+.netflix::after, 
+ h3::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400%;
+    height: 100%;
+    background: linear-gradient(to right, transparent,#000,#000);
+    z-index: 3;
+     animation: anim 2s linear forwards;
+}
+
+@keyframes anim{
+    0%{
+        right: 0;
+    }
+    100%{
+        right: -400%;
+    }
 }
